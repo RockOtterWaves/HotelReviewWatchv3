@@ -1,0 +1,77 @@
+name: Monthly Review Scraper
+
+on:
+  # 7th of every month at 9:00 AM PST (17:00 UTC)
+  schedule:
+    - cron: '0 17 7 * *'
+
+  # Manual trigger with options
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'monthly'
+        type: choice
+        options:
+          - monthly      # count previous month reviews (normal run)
+          - baseline     # first-time run: store current totals
+          - dry-run      # validate config only, no scraping
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150   # 16 properties × ~8 min each with delays
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scraper
+        # FIX: use npm install not npm ci — no lockfile committed
+        run: npm install
+
+      - name: Install Playwright Chromium
+        working-directory: scraper
+        run: npx playwright install chromium --with-deps
+
+      - name: Run scraper
+        working-directory: scraper
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          # Scheduled runs always do a monthly run
+          if [ -z "$MODE" ]; then MODE="monthly"; fi
+
+          echo "▶  Running in mode: $MODE"
+
+          if [ "$MODE" = "baseline" ]; then
+            node index.js --baseline
+          elif [ "$MODE" = "dry-run" ]; then
+            node index.js --dry-run
+          else
+            node index.js
+          fi
+        env:
+          NODE_ENV: production
+
+      - name: Commit updated data
+        # FIX: was failing for scheduled runs because inputs.mode is undefined;
+        # now checks the MODE variable instead, and skips only dry-run
+        if: github.event.inputs.mode != 'dry-run'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Review Tracker Bot"
+          git add data/reviews.json data/alerts.json || true
+          git diff --staged --quiet || git commit -m "📊 Review data: $(date +'%B %Y') [$(date +'%Y-%m-%d')]"
+          git push

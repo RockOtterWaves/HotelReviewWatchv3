@@ -1,0 +1,130 @@
+[
+  {
+    "id": "sea-air-inn",
+    "name": "Sea Air Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/112590579",
+    "googleUrl": null
+  },
+  {
+    "id": "blufftop-inn",
+    "name": "Blufftop Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/479946448",
+    "googleUrl": null
+  },
+  {
+    "id": "harbor-house",
+    "name": "Harbor House",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/112301930",
+    "googleUrl": null
+  },
+  {
+    "id": "bay-view-inn",
+    "name": "Bay View Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/225587661",
+    "googleUrl": null
+  },
+  {
+    "id": "avalon-inn",
+    "name": "Avalon Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/306690027",
+    "googleUrl": null
+  },
+  {
+    "id": "coastal-breeze",
+    "name": "Coastal Breeze",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/516413702",
+    "googleUrl": null
+  },
+  {
+    "id": "rockview-inn",
+    "name": "Rockview Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/339880638",
+    "googleUrl": null
+  },
+  {
+    "id": "morro-shores-inn",
+    "name": "Morro Shores Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/240056381",
+    "googleUrl": null
+  },
+  {
+    "id": "hotel-avisa",
+    "name": "Hotel Avisa",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/441393611",
+    "googleUrl": null
+  },
+  {
+    "id": "pacific-shores-inn",
+    "name": "Pacific Shores Inn",
+    "bookingUrl": "https://www.booking.com/hotel/us/pacific-shores-inn-morro-bay.html",
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Pacific-Shores-Inn.h1156924.Hotel-Information",
+    "airbnbUrl": "https://www.airbnb.com/users/show/17313548",
+    "googleUrl": "https://www.google.com/maps/place/Pacific+Shores+Inn/@35.366717,-120.85097,676m"
+  },
+  {
+    "id": "ascot-suites",
+    "name": "Ascot Suites",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/profile/1470524939373852171",
+    "googleUrl": null
+  },
+  {
+    "id": "la-serena-inn",
+    "name": "La Serena Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/225434992",
+    "googleUrl": null
+  },
+  {
+    "id": "456-embarcadero",
+    "name": "456 Embarcadero",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/show/318786753",
+    "googleUrl": null
+  },
+  {
+    "id": "marina-street-inn",
+    "name": "Marina Street Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/profile/1465639947604155591",
+    "googleUrl": null
+  },
+  {
+    "id": "estero-inn",
+    "name": "Estero Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/profile/1470696171997650502",
+    "googleUrl": null
+  },
+  {
+    "id": "holland-inn",
+    "name": "Holland Inn",
+    "bookingUrl": null,
+    "expediaUrl": null,
+    "airbnbUrl": "https://www.airbnb.com/users/profile/1657459796690345018",
+    "googleUrl": null
+  }
+]

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0c0f;
+    --bg-card: #14141a;
+    --bg-card2: #1a1a22;
+    --bg-card3: #1f1f28;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.13);
+    --text: #ededf2;
+    --text-muted: #8888a0;
+    --text-dim: #44445a;
+    --booking: #4a90d9;
+    --expedia: #f5c400;
+    --airbnb: #ff5a5f;
+    --google: #34a853;
+    --total: #a78bfa;
+    --green: #22c55e;
+    --red: #ef4444;
+    --amber: #f59e0b;
+    --radius: 10px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  /* ── Header ── */
+  .header {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 0 28px;
+    height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header-left { display: flex; align-items: center; gap: 10px; }
+  .logo { font-size: 20px; line-height: 1; }
+  .header-title { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
+  .header-sub { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+  .month-tabs { display: flex; gap: 6px; }
+  .month-tab {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text-muted); padding: 5px 12px;
+    border-radius: 6px; font-size: 12px; font-weight: 500;
+    cursor: pointer; font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s;
+  }
+  .month-tab:hover { border-color: var(--border-hover); color: var(--text); }
+  .month-tab.active { background: var(--total); border-color: var(--total); color: #fff; }
+
+  /* ── Layout ── */
+  .main { max-width: 1360px; margin: 0 auto; padding: 24px 28px 48px; }
+
+  /* ── Alerts bar ── */
+  .alerts-bar {
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  .alerts-bar.visible { display: block; }
+  .alerts-bar-title { font-size: 12px; font-weight: 600; color: var(--red); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+  .alert-item { font-size: 13px; color: #fca5a5; padding: 3px 0; }
+  .alert-item.warn { color: #fcd34d; }
+
+  /* ── Summary grid ── */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .summary-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .summary-card::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .sc-booking::after  { background: var(--booking); }
+  .sc-expedia::after  { background: var(--expedia); }
+  .sc-airbnb::after   { background: var(--airbnb); }
+  .sc-google::after   { background: var(--google); }
+  .sc-total::after    { background: var(--total); }
+  .sc-label { font-size: 11px; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+  .sc-value { font-family: 'DM Mono', monospace; font-size: 30px; font-weight: 400; letter-spacing: -0.02em; }
+  .sc-booking  .sc-value { color: var(--booking); }
+  .sc-expedia  .sc-value { color: var(--expedia); }
+  .sc-airbnb   .sc-value { color: var(--airbnb); }
+  .sc-google   .sc-value { color: var(--google); }
+  .sc-total    .sc-value { color: var(--total); }
+  .sc-sub { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+  /* ── Section header ── */
+  .section-hd { font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 20px 0 10px; }
+
+  /* ── Charts ── */
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+  .chart-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px 20px;
+  }
+  .chart-title { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; }
+  .chart-title b { color: var(--text); font-weight: 500; }
+  .chart-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-muted); }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ── Table ── */
+  .table-wrap {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  thead tr { border-bottom: 1px solid var(--border); }
+  th {
+    padding: 10px 14px; text-align: left;
+    font-size: 10px; font-weight: 500; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--text-dim); white-space: nowrap;
+  }
+  th.r { text-align: right; }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--bg-card2); }
+  td { padding: 12px 14px; font-size: 13px; }
+  td.r { text-align: right; font-family: 'DM Mono', monospace; font-size: 14px; font-weight: 500; }
+  .td-booking { color: var(--booking); }
+  .td-expedia { color: var(--expedia); }
+  .td-airbnb  { color: var(--airbnb); }
+  .td-google  { color: var(--google); }
+  .td-total   { color: var(--total); }
+  .td-null    { color: var(--text-dim); font-size: 12px; font-family: 'DM Mono', monospace; }
+  .td-err     { color: var(--red); font-size: 11px; }
+  .prop-name  { font-weight: 500; }
+  .prop-meta  { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+  /* ── Baseline badge ── */
+  .baseline-badge {
+    display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; background: rgba(167,139,250,0.15);
+    color: var(--total); padding: 2px 7px; border-radius: 4px; margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ── Empty / loading ── */
+  .empty { text-align: center; padding: 80px 20px; color: var(--text-muted); }
+  .empty h2 { font-size: 18px; font-weight: 400; margin-bottom: 10px; }
+  .empty p { font-size: 13px; color: var(--text-dim); max-width: 420px; margin: 0 auto; line-height: 1.7; }
+  code { font-family: 'DM Mono', monospace; font-size: 12px; background: var(--bg-card2); border: 1px solid var(--border); padding: 1px 5px; border-radius: 3px; }
+
+  @media (max-width: 900px) {
+    .summary-grid { grid-template-columns: repeat(3, 1fr); }
+    .chart-row { grid-template-columns: 1fr; }
+    .main { padding: 16px; }
+    .header { padding: 0 16px; }
+  }
+  @media (max-width: 600px) {
+    .summary-grid { grid-template-columns: 1fr 1fr; }
+    .month-tabs { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo">📊</div>
+    <div>
+      <div class="header-title">Review Tracker</div>
+      <div class="header-sub" id="last-updated">Loading…</div>
+    </div>
+  </div>
+  <div class="month-tabs" id="month-tabs"></div>
+</div>
+
+<div class="main" id="main"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+'use strict';
+
+// ─── Data paths ───────────────────────────────────────────────────────────────
+// FIX: dashboard lives in /dashboard/ subfolder on GitHub Pages,
+// so data files are one level up at ../data/
+const DATA_URL   = '../data/reviews.json';
+const ALERTS_URL = '../data/alerts.json';
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+const fmt = n => (n === null || n === undefined) ? null : Number(n).toLocaleString();
+
+function getPlatform(entry, pl) {
+  if (!entry?.platforms) return null;
+  return entry.platforms[pl] ?? null;
+}
+
+function getPlatformCount(entry, pl) {
+  const p = getPlatform(entry, pl);
+  if (!p) return null;
+  if (p.skipped) return null;
+  if (p.error)   return 'error';
+  return p.count ?? null;
+}
+
+function rowTotal(entry) {
+  if (!entry) return null;
+  let sum = 0, any = false;
+  for (const pl of ['booking','expedia','airbnb','google']) {
+    const c = getPlatformCount(entry, pl);
+    if (typeof c === 'number') { sum += c; any = true; }
+  }
+  return any ? sum : null;
+}
+
+function allMonthKeys(data) {
+  const s = new Set();
+  Object.values(data.properties).forEach(p => Object.keys(p.history || {}).forEach(k => s.add(k)));
+  return [...s].sort();
+}
+
+function monthLabel(key, fmt = 'long') {
+  const [y, m] = key.split('-');
+  return new Date(+y, +m - 1).toLocaleString('en-US', { month: fmt, year: 'numeric' });
+}
+
+function isBaseline(entry) { return entry?.mode === 'baseline'; }
+
+// ─── Render helpers ───────────────────────────────────────────────────────────
+function tdNum(val, cls) {
+  if (val === 'error') return `<td class="r td-err">err</td>`;
+  if (val === null)    return `<td class="r td-null">—</td>`;
+  return `<td class="r ${cls}">${fmt(val)}</td>`;
+}
+
+// ─── Alerts bar ───────────────────────────────────────────────────────────────
+async function loadAndRenderAlerts() {
+  try {
+    const res = await fetch(ALERTS_URL + '?t=' + Date.now());
+    if (!res.ok) return;
+    const runs = await res.json();
+    if (!runs?.length) return;
+
+    const latest = runs[0];
+    const items = (latest.alerts || []).filter(a => a.level === 'error' || a.level === 'warn');
+    if (!items.length) return;
+
+    const bar = document.getElementById('alerts-bar');
+    if (!bar) return;
+
+    bar.innerHTML = `<div class="alerts-bar-title">⚠ ${items.length} alert${items.length > 1 ? 's' : ''} from last run (${new Date(latest.at).toLocaleDateString()})</div>` +
+      items.map(a => `<div class="alert-item ${a.level}">[${a.level.toUpperCase()}] ${a.property} / ${a.platform}: ${a.message}</div>`).join('');
+    bar.classList.add('visible');
+  } catch { /* alerts.json may not exist yet */ }
+}
+
+// ─── Summary cards ────────────────────────────────────────────────────────────
+function renderSummary(data, monthKey) {
+  const totals = { booking: 0, expedia: 0, airbnb: 0, google: 0, total: 0 };
+  Object.values(data.properties).forEach(prop => {
+    const entry = prop.history?.[monthKey];
+    ['booking','expedia','airbnb','google'].forEach(pl => {
+      const c = getPlatformCount(entry, pl);
+      if (typeof c === 'number') { totals[pl] += c; totals.total += c; }
+    });
+  });
+
+  const defs = [
+    { key: 'booking', label: 'Booking.com' },
+    { key: 'expedia', label: 'Expedia' },
+    { key: 'airbnb',  label: 'Airbnb' },
+    { key: 'google',  label: 'Google' },
+    { key: 'total',   label: 'All Platforms' },
+  ];
+
+  return `<div class="summary-grid">${defs.map(d => `
+    <div class="summary-card sc-${d.key}">
+      <div class="sc-label">${d.label}</div>
+      <div class="sc-value">${totals[d.key]}</div>
+      <div class="sc-sub">new reviews</div>
+    </div>`).join('')}</div>`;
+}
+
+// ─── Table ────────────────────────────────────────────────────────────────────
+function renderTable(data, monthKey) {
+  const props = Object.values(data.properties);
+  if (!props.length) return '<div class="empty"><h2>No properties yet.</h2></div>';
+
+  const rows = props.map(prop => {
+    const entry = prop.history?.[monthKey];
+    const baseline = isBaseline(entry);
+    const b = getPlatformCount(entry, 'booking');
+    const e = getPlatformCount(entry, 'expedia');
+    const a = getPlatformCount(entry, 'airbnb');
+    const g = getPlatformCount(entry, 'google');
+    const t = rowTotal(entry);
+    const scrDate = entry?.scrapedAt
+      ? new Date(entry.scrapedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+      : '';
+    const airbnbNote = entry?.platforms?.airbnb?.note || '';
+
+    return `<tr>
+      <td>
+        <div class="prop-name">${prop.name}${baseline ? '<span class="baseline-badge">baseline</span>' : ''}</div>
+        ${scrDate ? `<div class="prop-meta">Scraped ${scrDate}${airbnbNote ? ' · ' + airbnbNote : ''}</div>` : ''}
+      </td>
+      ${tdNum(b, 'td-booking')}
+      ${tdNum(e, 'td-expedia')}
+      ${tdNum(baseline ? null : a, 'td-airbnb')}
+      ${tdNum(g, 'td-google')}
+      ${tdNum(baseline ? null : t, 'td-total')}
+    </tr>`;
+  }).join('');
+
+  return `<div class="table-wrap"><table>
+    <thead><tr>
+      <th>Property</th>
+      <th class="r">Booking.com</th>
+      <th class="r">Expedia</th>
+      <th class="r">Airbnb</th>
+      <th class="r">Google</th>
+      <th class="r">Total</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>`;
+}
+
+// ─── Charts ───────────────────────────────────────────────────────────────────
+const chartInstances = [];
+function destroyCharts() { chartInstances.forEach(c => c.destroy()); chartInstances.length = 0; }
+
+const PLATFORM_COLORS = { booking: '#4a90d9', expedia: '#f5c400', airbnb: '#ff5a5f', google: '#34a853' };
+const PLATFORM_LABELS = { booking: 'Booking.com', expedia: 'Expedia', airbnb: 'Airbnb', google: 'Google' };
+const PROP_COLORS = ['#a78bfa','#60a5fa','#34d399','#fb923c','#f472b6','#94a3b8'];
+
+function chartDefaults() {
+  return {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { backgroundColor: '#1a1a22', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1,
+        titleColor: '#ededf2', bodyColor: '#8888a0', padding: 10 },
+    },
+    scales: {
+      x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#555', font: { size: 11 } } },
+      y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#555', font: { size: 11 } }, beginAtZero: true },
+    },
+  };
+}
+
+function initCharts(data, allMonths) {
+  destroyCharts();
+
+  // Need at least 2 months for a meaningful trend
+  const months = allMonths.filter(k => {
+    // Exclude pure baseline months from trend (they show 0 for all date-based counts)
+    const hasAnyNonBaseline = Object.values(data.properties).some(p => {
+      const e = p.history?.[k];
+      return e && !isBaseline(e);
+    });
+    return hasAnyNonBaseline;
+  });
+
+  if (months.length < 2) return;
+
+  const last6 = months.slice(-6);
+  const labels = last6.map(k => {
+    const [y, m] = k.split('-');
+    return new Date(+y, +m - 1).toLocaleString('en-US', { month: 'short', year: '2-digit' });
+  });
+
+  // Platform totals chart
+  const pData = {};
+  ['booking','expedia','airbnb','google'].forEach(pl => {
+    pData[pl] = last6.map(mo => {
+      let tot = 0;
+      Object.values(data.properties).forEach(prop => {
+        const c = getPlatformCount(prop.history?.[mo], pl);
+        if (typeof c === 'number') tot += c;
+      });
+      return tot;
+    });
+  });
+
+  const c1el = document.getElementById('chart-platform');
+  if (c1el) {
+    const c1 = new Chart(c1el, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: Object.entries(pData).map(([pl, d]) => ({
+          label: PLATFORM_LABELS[pl], data: d,
+          borderColor: PLATFORM_COLORS[pl],
+          backgroundColor: PLATFORM_COLORS[pl] + '18',
+          tension: 0.35, pointRadius: 4, borderWidth: 2, fill: false,
+        })),
+      },
+      options: chartDefaults(),
+    });
+    chartInstances.push(c1);
+
+    // Render legend
+    const leg1 = document.getElementById('chart-platform-legend');
+    if (leg1) leg1.innerHTML = Object.entries(PLATFORM_COLORS).map(([pl, col]) =>
+      `<div class="legend-item"><div class="legend-dot" style="background:${col}"></div>${PLATFORM_LABELS[pl]}</div>`
+    ).join('');
+  }
+
+  // Top properties chart
+  const propRanked = Object.values(data.properties).map(prop => ({
+    name: prop.name.length > 20 ? prop.name.slice(0, 18) + '…' : prop.name,
+    totAll: last6.reduce((s, mo) => s + (rowTotal(prop.history?.[mo]) || 0), 0),
+    series: last6.map(mo => rowTotal(prop.history?.[mo]) || 0),
+  })).sort((a, b) => b.totAll - a.totAll).slice(0, 6);
+
+  const c2el = document.getElementById('chart-props');
+  if (c2el) {
+    const c2 = new Chart(c2el, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: propRanked.map((p, i) => ({
+          label: p.name, data: p.series,
+          borderColor: PROP_COLORS[i],
+          backgroundColor: PROP_COLORS[i] + '18',
+          tension: 0.35, pointRadius: 4, borderWidth: 2, fill: false,
+        })),
+      },
+      options: chartDefaults(),
+    });
+    chartInstances.push(c2);
+
+    const leg2 = document.getElementById('chart-props-legend');
+    if (leg2) leg2.innerHTML = propRanked.map((p, i) =>
+      `<div class="legend-item"><div class="legend-dot" style="background:${PROP_COLORS[i]}"></div>${p.name}</div>`
+    ).join('');
+  }
+}
+
+// ─── Month tabs ───────────────────────────────────────────────────────────────
+function renderTabs(allMonths, selected) {
+  const tabs = document.getElementById('month-tabs');
+  const show = allMonths.slice(-5);
+  tabs.innerHTML = show.map(k =>
+    `<button class="month-tab ${k === selected ? 'active' : ''}" data-month="${k}">${monthLabel(k,'short')}</button>`
+  ).join('');
+  tabs.querySelectorAll('.month-tab').forEach(btn =>
+    btn.addEventListener('click', () => render(currentData, btn.dataset.month))
+  );
+}
+
+// ─── Main render ──────────────────────────────────────────────────────────────
+let currentData = null;
+
+function render(data, monthKey) {
+  const allMonths = allMonthKeys(data);
+  if (!allMonths.length) { renderEmpty(); return; }
+  const key = monthKey || allMonths[allMonths.length - 1];
+
+  renderTabs(allMonths, key);
+
+  document.getElementById('last-updated').textContent = data.lastUpdated
+    ? `Updated ${new Date(data.lastUpdated).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`
+    : 'No data yet';
+
+  const [y, m] = key.split('-');
+  const label = new Date(+y, +m - 1).toLocaleString('en-US', { month: 'long', year: 'numeric' });
+
+  document.getElementById('main').innerHTML = `
+    <div id="alerts-bar" class="alerts-bar"></div>
+
+    <div class="section-hd">Summary — ${label}</div>
+    ${renderSummary(data, key)}
+
+    <div class="section-hd">Trends (last 6 months)</div>
+    <div class="chart-row">
+      <div class="chart-card">
+        <div class="chart-title"><b>Reviews by platform</b></div>
+        <div style="position:relative;height:200px"><canvas id="chart-platform"></canvas></div>
+        <div class="chart-legend" id="chart-platform-legend"></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title"><b>Top properties</b></div>
+        <div style="position:relative;height:200px"><canvas id="chart-props"></canvas></div>
+        <div class="chart-legend" id="chart-props-legend"></div>
+      </div>
+    </div>
+
+    <div class="section-hd">All properties — ${label}</div>
+    ${renderTable(data, key)}
+  `;
+
+  setTimeout(() => {
+    initCharts(data, allMonths);
+    loadAndRenderAlerts();
+  }, 60);
+}
+
+function renderEmpty() {
+  document.getElementById('last-updated').textContent = 'No data yet';
+  document.getElementById('main').innerHTML = `
+    <div class="empty">
+      <h2>No data yet</h2>
+      <p>
+        Your <code>properties.json</code> is ready with all 16 properties.<br><br>
+        Run a <b>baseline</b> first to store current Airbnb totals, then the
+        scheduled run on the 7th will calculate monthly deltas.<br><br>
+        Go to <b>Actions → Monthly Review Scraper → Run workflow → baseline</b>.
+      </p>
+    </div>`;
+}
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
+(async () => {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+
+    if (!data?.properties || !Object.keys(data.properties).length) {
+      renderEmpty();
+      return;
+    }
+
+    currentData = data;
+    render(data);
+  } catch {
+    renderEmpty();
+  }
+})();
+</script>
+</body>
+</html>
