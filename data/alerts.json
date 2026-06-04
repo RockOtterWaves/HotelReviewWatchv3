@@ -1,1 +1,281 @@
-[]
+[
+  {
+    "run": "June 2026",
+    "at": "2026-06-04T03:12:08.960Z",
+    "alerts": [
+      {
+        "level": "warn",
+        "property": "Sea Air Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:25:44.956Z"
+      },
+      {
+        "level": "error",
+        "property": "Sea Air Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:26:37.144Z"
+      },
+      {
+        "level": "warn",
+        "property": "Blufftop Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:28:27.091Z"
+      },
+      {
+        "level": "error",
+        "property": "Blufftop Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:29:23.887Z"
+      },
+      {
+        "level": "warn",
+        "property": "Harbor House",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:31:25.699Z"
+      },
+      {
+        "level": "error",
+        "property": "Harbor House",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:32:21.014Z"
+      },
+      {
+        "level": "warn",
+        "property": "Bay View Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:33:56.907Z"
+      },
+      {
+        "level": "error",
+        "property": "Bay View Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:34:53.336Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:36:09.038Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:36:37.332Z"
+      },
+      {
+        "level": "error",
+        "property": "Avalon Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:37:37.220Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:38:39.034Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:39:12.908Z"
+      },
+      {
+        "level": "error",
+        "property": "Coastal Breeze",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:40:19.522Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:41:27.311Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:41:53.127Z"
+      },
+      {
+        "level": "error",
+        "property": "Rockview Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:43:00.453Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:43:57.965Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:44:24.435Z"
+      },
+      {
+        "level": "error",
+        "property": "Morro Shores Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:45:27.647Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:46:17.229Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:46:49.535Z"
+      },
+      {
+        "level": "error",
+        "property": "Hotel Avisa",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:47:44.028Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:49:23.978Z"
+      },
+      {
+        "level": "error",
+        "property": "Pacific Shores Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:50:22.025Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Google",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:54:37.250Z"
+      },
+      {
+        "level": "warn",
+        "property": "Ascot Suites",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:55:57.284Z"
+      },
+      {
+        "level": "error",
+        "property": "Ascot Suites",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:56:57.427Z"
+      },
+      {
+        "level": "warn",
+        "property": "La Serena Inn",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:57:54.548Z"
+      },
+      {
+        "level": "warn",
+        "property": "La Serena Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T02:58:27.843Z"
+      },
+      {
+        "level": "error",
+        "property": "La Serena Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T02:59:31.695Z"
+      },
+      {
+        "level": "warn",
+        "property": "456 Embarcadero",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T03:01:15.311Z"
+      },
+      {
+        "level": "error",
+        "property": "456 Embarcadero",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T03:02:10.514Z"
+      },
+      {
+        "level": "error",
+        "property": "Marina Street Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T03:03:50.470Z"
+      },
+      {
+        "level": "error",
+        "property": "Estero Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T03:05:27.362Z"
+      },
+      {
+        "level": "warn",
+        "property": "Landing Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T03:07:25.887Z"
+      },
+      {
+        "level": "warn",
+        "property": "Masterpiece Hotel",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T03:09:07.974Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T03:11:01.889Z"
+      },
+      {
+        "level": "error",
+        "property": "Holland Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T03:11:57.004Z"
+      }
+    ]
+  }
+]

@@ -1,4 +1,555 @@
 {
-  "lastUpdated": null,
-  "properties": {}
+  "lastUpdated": "2026-06-04T03:12:08.926Z",
+  "properties": {
+    "sea-air-inn": {
+      "name": "Sea Air Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:27:01.611Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "blufftop-inn": {
+      "name": "Blufftop Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:29:44.918Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "harbor-house": {
+      "name": "Harbor House",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:32:41.770Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "bay-view-inn": {
+      "name": "Bay View Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:35:14.949Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "avalon-inn": {
+      "name": "Avalon Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:37:58.868Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "coastal-breeze": {
+      "name": "Coastal Breeze",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:40:32.426Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "rockview-inn": {
+      "name": "Rockview Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:43:18.723Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "morro-shores-inn": {
+      "name": "Morro Shores Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:45:39.477Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "hotel-avisa": {
+      "name": "Hotel Avisa",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:48:01.202Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "pacific-shores-inn": {
+      "name": "Pacific Shores Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:54:37.250Z",
+          "platforms": {
+            "booking": {
+              "count": 2,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": 0,
+              "error": null
+            }
+          }
+        }
+      }
+    },
+    "ascot-suites": {
+      "name": "Ascot Suites",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:57:08.776Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "la-serena-inn": {
+      "name": "La Serena Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T02:59:42.381Z",
+          "platforms": {
+            "booking": {
+              "count": 0,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "456-embarcadero": {
+      "name": "456 Embarcadero",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:02:24.470Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "marina-street-inn": {
+      "name": "Marina Street Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:04:05.698Z",
+          "platforms": {
+            "booking": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "expedia": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "estero-inn": {
+      "name": "Estero Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:05:51.004Z",
+          "platforms": {
+            "booking": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "expedia": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "landing-inn": {
+      "name": "Landing Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:07:41.446Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "masterpiece-hotel": {
+      "name": "Masterpiece Hotel",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:09:29.384Z",
+          "platforms": {
+            "booking": {
+              "count": 1,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    },
+    "holland-inn": {
+      "name": "Holland Inn",
+      "history": {
+        "2026-06": {
+          "label": "June 2026",
+          "mode": "baseline",
+          "scrapedAt": "2026-06-04T03:12:08.926Z",
+          "platforms": {
+            "booking": {
+              "count": 2,
+              "error": null
+            },
+            "expedia": {
+              "count": 0,
+              "error": null
+            },
+            "airbnb": {
+              "count": null,
+              "error": "Could not extract any review counts from Airbnb profile page"
+            },
+            "google": {
+              "count": null,
+              "error": null,
+              "skipped": true,
+              "note": "No URL configured"
+            }
+          }
+        }
+      }
+    }
+  }
 }
