@@ -185,72 +185,38 @@ async function expandReviews(page, targetMonth) {
 }
 
 async function countExpediaReviews(page, targetMonth) {
-  return await page.evaluate((target) => {
-    const monthNames = [
-      'January','February','March','April','May','June',
-      'July','August','September','October','November','December',
-    ];
-    const targetMonthName = monthNames[target.month - 1];
-    const targetStr = `${targetMonthName} ${target.year}`;
+  return await page.evaluate((tgt) => {
+    // Map numerical month to Expedia's text format
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const targetString = `${months[tgt.month - 1]} ${tgt.year}`; // e.g., "May 2026"
+    
+    console.log(`Searching for string matches of: ${targetString}`);
 
-    // First pass: structured date elements
-    const dateSelectors = [
-      '[data-testid="review-date"]',
-      '[class*="review-date"]',
-      '[class*="ReviewDate"]',
-      'time',
-      '[datetime]',
-    ];
-
-    const seenEls = new Set();
-    let count = 0;
-
-    for (const sel of dateSelectors) {
-      document.querySelectorAll(sel).forEach((el, idx) => {
-        if (seenEls.has(el)) return;
-        seenEls.add(el);
-
-        const text = el.textContent.trim();
-        const datetime = el.getAttribute('datetime') || '';
-        const combined = `${text} ${datetime}`;
-
-        if (
-          combined.toLowerCase().includes(targetMonthName.toLowerCase()) &&
-          combined.includes(String(target.year))
-        ) {
-          count++;
+    // Replicate structural fallback check
+    let totalFound = 0;
+    const reviewCards = document.querySelectorAll('[data-stid="review-card"], .uitk-card, article');
+    
+    if (reviewCards.length > 0) {
+      reviewCards.forEach(card => {
+        if (card.innerText && card.innerText.includes(targetString)) {
+          totalFound++;
         }
       });
     }
 
-    if (count > 0) return count;
-
-    // Second pass: per-review-container text scan
-    const containerSelectors = [
-      '[data-testid="review-card"]',
-      '[class*="ReviewCard"]',
-      '[class*="review-item"]',
-      '.review-container',
-    ];
-
-    for (const containerSel of containerSelectors) {
-      const containers = document.querySelectorAll(containerSel);
-      if (containers.length === 0) continue;
-
-      containers.forEach(c => {
-        if (c.textContent.includes(targetStr)) count++;
-      });
-      if (count > 0) return count;
+    // Absolute fallback: If container bindings failed, run a raw regex match on the text stream
+    if (totalFound === 0) {
+      const cleanBodyText = document.body.innerText || '';
+      // Escapes string characters safely to prevent structural crashes
+      const escapedStr = targetString.replace(/[.*+?^${}()|[\\]\\\]/g, '\\$&');
+      const matches = cleanBodyText.match(new RegExp(`\\b${escapedStr}\\b`, 'g'));
+      return matches ? matches.length : 0;
     }
 
-    // Last resort: raw page text count — use word-boundary regex to avoid
-    // false matches (e.g. "December 2026" matching "ember 2026")
-    const pageText = document.body.innerText;
-    const escaped = targetStr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const matches = pageText.match(new RegExp(escaped, 'g'));
-    return matches ? matches.length : 0;
-  }, { year: targetMonth.year, month: targetMonth.month });
+    return totalFound;
+  }, { month: targetMonth.month, year: targetMonth.year });
 }
+
 
 // FIX: was iterating ALL selectors and clicking each — now exits after first match
 async function dismissFirstOverlay(page) {
