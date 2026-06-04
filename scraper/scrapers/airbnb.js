@@ -35,7 +35,7 @@ async function scrapeAirbnb(browser, url, targetMonth) {
     // Scroll down to load all listings (lazy-loaded)
     await loadAllListings(page);
 
-    const total = await ReviewCounts(page, profileUrl);
+   const total = await sumReviewCounts(page, profileUrl);
 
     if (total === null) {
       throw new Error('Could not extract any review counts from Airbnb profile page');
