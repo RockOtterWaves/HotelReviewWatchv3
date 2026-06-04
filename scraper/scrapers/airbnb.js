@@ -35,7 +35,7 @@ async function scrapeAirbnb(browser, url, targetMonth) {
     // Scroll down to load all listings (lazy-loaded)
     await loadAllListings(page);
 
-    const total = await sumReviewCounts(page, profileUrl);
+    const total = await ReviewCounts(page, profileUrl);
 
     if (total === null) {
       throw new Error('Could not extract any review counts from Airbnb profile page');
@@ -85,31 +85,28 @@ async function loadAllListings(page) {
 }
 
 async function sumReviewCounts(page, profileUrl) {
-  return await page.evaluate((url) => {
-    // Airbnb profile pages show listings as cards, each with a review count.
-    // The review count appears in several forms:
-    //   "4.85 (312)"        — rating + count in parens
-    //   "312 reviews"
-    //   "4.85 · 312 reviews"
-    //   aria-label="4.85 out of 5 average rating, 312 reviews"
-
-    const reviewPatterns = [
-      /\((\d[\d,]*)\)/,                    // (312)
-      /(\d[\d,]*)\s+reviews?/i,             // 312 reviews
-      /·\s*(\d[\d,]*)\s+reviews?/i,         // · 312 reviews
-      /,\s*(\d[\d,]*)\s+reviews?/i,         // , 312 reviews (aria-label)
-    ];
-
-    function extractCount(text) {
-      for (const pat of reviewPatterns) {
-        const m = text.match(pat);
-        if (m) {
-          const n = parseInt(m[1].replace(/,/g, ''));
-          if (n > 0 && n < 200000) return n;
-        }
+  return await page.evaluate(() => {
+    // Strategy 1: Target the "About Host" statistics container cards directly
+    const statCards = document.querySelectorAll('div[data-testid="user-profile-card-biography"] div, div[data-component-type="user_profile_card"] div');
+    for (const card of statCards) {
+      const text = card.innerText || '';
+      // Look for a standalone number followed immediately by "Reviews" or "reviews"
+      const match = text.match(/^(\d+)\s*\n?\s*Reviews/i);
+      if (match) {
+        return parseInt(match[1], 10);
       }
-      return null;
     }
+
+    // Strategy 2: Fallback to scanning the entire document text near structural headers
+    const pageText = document.body.innerText || '';
+    const globalMatch = pageText.match(/(\d+)\s+Reviews\b/i) || pageText.match(/About\s+[^]+?(\d+)\s+Reviews/i);
+    if (globalMatch) {
+      return parseInt(globalMatch[1], 10);
+    }
+
+    return null;
+  });
+}
 
     // ── Strategy 1: Listing card selectors ────────────────────────────────────
     const cardSelectors = [
