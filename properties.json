@@ -3,7 +3,7 @@
     "id": "sea-air-inn",
     "name": "Sea Air Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/sea-air-inn.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Sea-Air-Inn-Suites-Downtown-Morro-Bay.h1721812.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/112590579",
     "googleUrl": null
   },
@@ -11,7 +11,7 @@
     "id": "blufftop-inn",
     "name": "Blufftop Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/blufftop-inn-amp-suites-wharf-47-restaurant-district.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/Morro-Bay-Hotels-Blufftop-Inn-Suites-Wharf-Restaurant.h87016200.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/479946448",
     "googleUrl": null
   },
@@ -19,7 +19,7 @@
     "id": "harbor-house",
     "name": "Harbor House",
     "bookingUrl": "https://www.booking.com/hotel/us/days-inn-morro-bay.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Harbor-House-Inn-Morro-Bay.h79558.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/112301930",
     "googleUrl": null
   },
@@ -27,7 +27,7 @@
     "id": "bay-view-inn",
     "name": "Bay View Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/bay-view-inn-morro-bay.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Bay-View-Inn.h1319305.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/225587661",
     "googleUrl": null
   },
@@ -35,7 +35,7 @@
     "id": "avalon-inn",
     "name": "Avalon Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/fireside-inn.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Fireside-Inn.h1151900.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/306690027",
     "googleUrl": null
   },
@@ -43,7 +43,7 @@
     "id": "coastal-breeze",
     "name": "Coastal Breeze",
     "bookingUrl": "https://www.booking.com/hotel/us/villager-motel.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Coastal-Breeze-Inn.h1818374.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/516413702",
     "googleUrl": null
   },
@@ -51,7 +51,7 @@
     "id": "rockview-inn",
     "name": "Rockview Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/rockview-inn-and-suites.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Rockview-Inn-And-Suites.h10718.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/339880638",
     "googleUrl": null
   },
@@ -59,7 +59,7 @@
     "id": "morro-shores-inn",
     "name": "Morro Shores Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/morro-shores-inn-and-suites.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Morro-Shores-Inn-And-Suites.h1658961.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/240056381",
     "googleUrl": null
   },
@@ -67,7 +67,7 @@
     "id": "hotel-avisa",
     "name": "Hotel Avisa",
     "bookingUrl": "https://www.booking.com/hotel/us/twin-dolphin-inn-morro-bay.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/Morro-Bay-Hotels-Hotel-Avisa.h890602.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/441393611",
     "googleUrl": null
   },
@@ -83,7 +83,7 @@
     "id": "ascot-suites",
     "name": "Ascot Suites",
     "bookingUrl": "https://www.booking.com/hotel/us/ascot-suites.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Ascot-Suites.h200219.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/profile/1470524939373852171",
     "googleUrl": null
   },
@@ -91,7 +91,7 @@
     "id": "la-serena-inn",
     "name": "La Serena Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/la-serena-inn.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/Morro-Bay-Hotels-La-Serena-Inn.h1181890.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/225434992",
     "googleUrl": null
   },
@@ -99,7 +99,7 @@
     "id": "456-embarcadero",
     "name": "456 Embarcadero",
     "bookingUrl": "https://www.booking.com/hotel/us/embarcadero-inn.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-456-Embarcadero-Inn-Suites.h973233.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/show/318786753",
     "googleUrl": null
   },
@@ -123,7 +123,7 @@
     "id": "landing-inn",
     "name": "Landing Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/breakers-motel.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-The-Landing-At-Morro-Bay.h1690290.Hotel-Information",
     "airbnbUrl": null,
     "googleUrl": null
   },
@@ -131,7 +131,7 @@
     "id": "masterpiece-hotel",
     "name": "Masterpiece Hotel",
     "bookingUrl": "https://www.booking.com/hotel/us/masterpiece-motel.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Masterpiece-Hotel.h1571482.Hotel-Information",
     "airbnbUrl": null,
     "googleUrl": null
   },
@@ -139,7 +139,7 @@
     "id": "holland-inn",
     "name": "Holland Inn",
     "bookingUrl": "https://www.booking.com/hotel/us/hollandinn-and-suits.html",
-    "expediaUrl": null,
+    "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Holland-Inn-Suites.h1293295.Hotel-Information",
     "airbnbUrl": "https://www.airbnb.com/users/profile/1657459796690345018",
     "googleUrl": null
   }
