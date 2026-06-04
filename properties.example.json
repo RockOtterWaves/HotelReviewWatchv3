@@ -1,13 +1,5 @@
 [
   {
-    "id": "property-001",
-    "name": "The Grand Hotel Downtown",
-    "bookingUrl": "https://www.booking.com/hotel/us/the-grand-downtown.html",
-    "expediaUrl": "https://www.expedia.com/New-York-Hotels-The-Grand-Downtown.h12345678.Hotel-Information",
-    "airbnbUrl": "https://www.airbnb.com/rooms/12345678",
-    "googleUrl": "https://www.google.com/maps/place/The+Grand+Hotel/@40.7128,-74.0060,17z"
-  },
-  {
     "id": "property-002",
     "name": "Beachfront Villa",
     "bookingUrl": "https://www.booking.com/hotel/us/beachfront-villa.html",
@@ -15,4 +7,12 @@
     "airbnbUrl": "https://www.airbnb.com/rooms/87654321",
     "googleUrl": "https://www.google.com/maps/place/Beachfront+Villa/..."
   }
-]
+  {
+    "id": "pacific-shores-inn",
+  "name": "Pacific Shores Inn",
+  "bookingUrl": "https://www.booking.com/hotel/us/pacific-shores-inn-morro-bay.html",
+  "expediaUrl": "https://www.expedia.com/San-Luis-Obispo-Hotels-Pacific-Shores-Inn.h1156924.Hotel-Information",
+  "airbnbUrl": "https://www.airbnb.com/users/show/17313548",
+  "googleUrl": "https://www.google.com/maps/place/Pacific+Shores+Inn/@35.366717,-120.85097,676m"
+  },
+  ]
