@@ -50,7 +50,38 @@ async function scrapeBooking(browser, url, targetMonth) {
 
       await sleep(1000 + Math.random() * 800);
 
-      const { count, allOlder } = await extractBookingReviews(page, targetMonth);
+// Intelligent extraction: replicates your manual "click and count" workflow
+      const { count, allOlder } = await page.evaluate((tgt) => {
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const targetMonthName = monthNames[tgt.month - 1].toLowerCase();
+        
+        let foundOnPage = 0;
+        let strictlyOlder = true;
+
+        // Replicates your manual step: looks for any element containing "Reviewed:" to find the date stamp
+        const allElements = document.querySelectorAll('*');
+        allElements.forEach(el => {
+          if (el.children.length === 0 && el.textContent && el.textContent.includes('Reviewed:')) {
+            const text = el.textContent.toLowerCase(); // e.g., "reviewed: may 28, 2026"
+            
+            // 1. Check if it matches our target month and year
+            if (text.includes(targetMonthName) && text.includes(tgt.year.toString())) {
+              foundOnPage++;
+              strictlyOlder = false;
+            } 
+            // 2. Check if the review is newer than our target (relevant for your baseline)
+            else if (text.includes(tgt.year.toString())) {
+               const foundMonthIdx = monthNames.findIndex(m => text.includes(m.toLowerCase()));
+               if (foundMonthIdx > (tgt.month - 1)) {
+                 strictlyOlder = false; 
+               }
+            }
+          }
+        });
+
+        return { count: foundOnPage, allOlder: strictlyOlder };
+      }, { month: targetMonth.month, year: targetMonth.year });
+
       totalCount += count;
       console.log(`    ✅  Page ${pageNum}: ${count} matching reviews`);
 
@@ -95,93 +126,6 @@ async function scrapeBooking(browser, url, targetMonth) {
     await context.close();
   }
 }
-
-// FIX: was double-collecting — structured selectors ran in addition to the
-// querySelectorAll('*') scan, so the same date text was pushed twice.
-// Now uses a single deduped Set keyed by element reference.
-async function extractBookingReviews(page, targetMonth) {
-  return await page.evaluate((target) => {
-    const monthNames = [
-      'January','February','March','April','May','June',
-      'July','August','September','October','November','December',
-    ];
-
-    // Collect all leaf-node texts that mention "Reviewed:" OR look like dates
-    // Use a WeakSet-equivalent via index to avoid double-counting same element
-    const seenEls = new Set();
-    const dateCandidates = [];
-
-    // Primary: elements explicitly containing "Reviewed:"
-    const allEls = document.querySelectorAll('*');
-    for (const el of allEls) {
-      if (el.children.length === 0) {
-        const t = el.textContent.trim();
-        if (t.includes('Reviewed:') && !seenEls.has(el)) {
-          seenEls.add(el);
-          dateCandidates.push(t);
-        }
-      }
-    }
-
-    // Secondary: structured selectors (only if primary yielded nothing)
-    if (dateCandidates.length === 0) {
-      const structured = [
-        '[data-testid="review-date"]',
-        '.c-review-block__date',
-        '.review_item_date',
-        '[class*="reviewDate"]',
-        '[class*="review-date"]',
-      ];
-      for (const sel of structured) {
-        document.querySelectorAll(sel).forEach(el => {
-          if (!seenEls.has(el)) {
-            seenEls.add(el);
-            const t = el.textContent.trim();
-            if (t) dateCandidates.push(t);
-          }
-        });
-      }
-    }
-
-    const patterns = [
-      /Reviewed:\s*(\w+)\s+\d+,?\s*(\d{4})/i,
-      /(\w+)\s+\d+,?\s+(\d{4})/,
-      /\d+\s+(\w+)\s+(\d{4})/,
-    ];
-
-    let count = 0;
-    let allOlder = dateCandidates.length > 0; // assume older until proven otherwise
-
-    for (const text of dateCandidates) {
-      for (const pattern of patterns) {
-        const match = text.match(pattern);
-        if (!match) continue;
-
-        const monthStr = match[1];
-        const year = parseInt(match[2]);
-        const monthIdx = monthNames.findIndex(m =>
-          m.toLowerCase().startsWith(monthStr.toLowerCase().substring(0, 3))
-        );
-        if (monthIdx === -1) continue;
-
-        const reviewMonth = monthIdx + 1;
-
-        if (year === target.year && reviewMonth === target.month) {
-          count++;
-          allOlder = false; // found at least one in-range review
-        } else if (year > target.year || (year === target.year && reviewMonth > target.month)) {
-          // Newer than target — shouldn't happen if sorted newest-first but don't break
-          allOlder = false;
-        }
-        // If older: leave allOlder as-is (true unless something newer found)
-        break;
-      }
-    }
-
-    return { count, allOlder };
-  }, { year: targetMonth.year, month: targetMonth.month });
-}
-
 async function sortByNewest(page) {
   // Booking.com review sort — try several selector patterns
   const sortSelectors = [
