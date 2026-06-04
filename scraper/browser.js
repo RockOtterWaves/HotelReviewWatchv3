@@ -36,7 +36,7 @@ function sleep(ms) {
 // 'headless: true' is deprecated in newer Playwright — use 'new'
 async function createStealthBrowser() {
   const browser = await chromium.launch({
-    headless: 'new',
+    headless: true,
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
