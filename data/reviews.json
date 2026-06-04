@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T03:12:08.926Z",
+  "lastUpdated": "2026-06-04T23:57:16.290Z",
   "properties": {
     "sea-air-inn": {
       "name": "Sea Air Inn",
@@ -7,10 +7,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:27:01.611Z",
+          "scrapedAt": "2026-06-04T22:07:34.316Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 62,
               "error": null
             },
             "expedia": {
@@ -19,7 +19,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 286,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -37,10 +41,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:29:44.918Z",
+          "scrapedAt": "2026-06-04T22:15:38.753Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 61,
               "error": null
             },
             "expedia": {
@@ -49,7 +53,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 74,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -67,10 +75,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:32:41.770Z",
+          "scrapedAt": "2026-06-04T22:23:35.041Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 63,
               "error": null
             },
             "expedia": {
@@ -79,7 +87,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 177,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -97,10 +109,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:35:14.949Z",
+          "scrapedAt": "2026-06-04T22:31:23.577Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 58,
               "error": null
             },
             "expedia": {
@@ -109,7 +121,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 550,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -127,10 +143,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:37:58.868Z",
+          "scrapedAt": "2026-06-04T22:35:43.509Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 25,
               "error": null
             },
             "expedia": {
@@ -139,7 +155,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 529,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -157,10 +177,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:40:32.426Z",
+          "scrapedAt": "2026-06-04T22:41:06.134Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 37,
               "error": null
             },
             "expedia": {
@@ -169,7 +189,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 535,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -187,10 +211,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:43:18.723Z",
+          "scrapedAt": "2026-06-04T22:46:51.473Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 37,
               "error": null
             },
             "expedia": {
@@ -199,7 +223,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 141,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -217,10 +245,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:45:39.477Z",
+          "scrapedAt": "2026-06-04T22:55:18.377Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 63,
               "error": null
             },
             "expedia": {
@@ -229,7 +257,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 596,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -247,10 +279,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:48:01.202Z",
+          "scrapedAt": "2026-06-04T23:03:28.347Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 61,
               "error": null
             },
             "expedia": {
@@ -259,7 +291,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 88,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -277,10 +313,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:54:37.250Z",
+          "scrapedAt": "2026-06-04T23:15:51.124Z",
           "platforms": {
             "booking": {
-              "count": 2,
+              "count": 63,
               "error": null
             },
             "expedia": {
@@ -289,7 +325,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 71,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": 0,
@@ -305,10 +345,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:57:08.776Z",
+          "scrapedAt": "2026-06-04T23:23:51.065Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 66,
               "error": null
             },
             "expedia": {
@@ -317,7 +357,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 5,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -335,10 +379,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T02:59:42.381Z",
+          "scrapedAt": "2026-06-04T23:32:33.274Z",
           "platforms": {
             "booking": {
-              "count": 0,
+              "count": 60,
               "error": null
             },
             "expedia": {
@@ -365,10 +409,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:02:24.470Z",
+          "scrapedAt": "2026-06-04T23:37:53.994Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 36,
               "error": null
             },
             "expedia": {
@@ -377,7 +421,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 66,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -395,7 +443,7 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:04:05.698Z",
+          "scrapedAt": "2026-06-04T23:38:48.476Z",
           "platforms": {
             "booking": {
               "count": null,
@@ -411,7 +459,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 120,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -429,7 +481,7 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:05:51.004Z",
+          "scrapedAt": "2026-06-04T23:39:58.665Z",
           "platforms": {
             "booking": {
               "count": null,
@@ -445,7 +497,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 128,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,
@@ -463,10 +519,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:07:41.446Z",
+          "scrapedAt": "2026-06-04T23:47:29.313Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 64,
               "error": null
             },
             "expedia": {
@@ -495,10 +551,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:09:29.384Z",
+          "scrapedAt": "2026-06-04T23:55:11.042Z",
           "platforms": {
             "booking": {
-              "count": 1,
+              "count": 65,
               "error": null
             },
             "expedia": {
@@ -527,10 +583,10 @@
         "2026-06": {
           "label": "June 2026",
           "mode": "baseline",
-          "scrapedAt": "2026-06-04T03:12:08.926Z",
+          "scrapedAt": "2026-06-04T23:57:16.290Z",
           "platforms": {
             "booking": {
-              "count": 2,
+              "count": 7,
               "error": null
             },
             "expedia": {
@@ -539,7 +595,11 @@
             },
             "airbnb": {
               "count": null,
-              "error": "Could not extract any review counts from Airbnb profile page"
+              "rawTotal": 27,
+              "previousTotal": null,
+              "previousMonth": null,
+              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "error": null
             },
             "google": {
               "count": null,

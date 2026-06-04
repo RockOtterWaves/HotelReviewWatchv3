@@ -1,6 +1,243 @@
 [
   {
     "run": "June 2026",
+    "at": "2026-06-04T23:57:16.318Z",
+    "alerts": [
+      {
+        "level": "warn",
+        "property": "Sea Air Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:06:42.704Z"
+      },
+      {
+        "level": "warn",
+        "property": "Sea Air Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:07:13.553Z"
+      },
+      {
+        "level": "warn",
+        "property": "Blufftop Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:14:54.630Z"
+      },
+      {
+        "level": "warn",
+        "property": "Blufftop Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:15:22.899Z"
+      },
+      {
+        "level": "warn",
+        "property": "Harbor House",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:22:53.142Z"
+      },
+      {
+        "level": "warn",
+        "property": "Harbor House",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:23:24.621Z"
+      },
+      {
+        "level": "warn",
+        "property": "Bay View Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:30:29.843Z"
+      },
+      {
+        "level": "warn",
+        "property": "Bay View Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:31:00.787Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:34:49.935Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:35:20.049Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:40:17.636Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:40:49.411Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:46:04.592Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:46:41.238Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T22:54:30.617Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T22:54:53.480Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:02:50.598Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:03:17.030Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:11:02.889Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:11:25.929Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Google",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:15:51.123Z"
+      },
+      {
+        "level": "warn",
+        "property": "Ascot Suites",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:23:08.101Z"
+      },
+      {
+        "level": "warn",
+        "property": "Ascot Suites",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:23:36.725Z"
+      },
+      {
+        "level": "warn",
+        "property": "La Serena Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:31:20.244Z"
+      },
+      {
+        "level": "error",
+        "property": "La Serena Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-06-04T23:32:16.532Z"
+      },
+      {
+        "level": "warn",
+        "property": "456 Embarcadero",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:37:05.319Z"
+      },
+      {
+        "level": "warn",
+        "property": "456 Embarcadero",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:37:34.619Z"
+      },
+      {
+        "level": "warn",
+        "property": "Marina Street Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:38:38.267Z"
+      },
+      {
+        "level": "warn",
+        "property": "Estero Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:39:43.402Z"
+      },
+      {
+        "level": "warn",
+        "property": "Landing Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:47:16.355Z"
+      },
+      {
+        "level": "warn",
+        "property": "Masterpiece Hotel",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:54:55.320Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-06-04T23:56:38.727Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Airbnb",
+        "message": "No prior snapshot found — baseline stored. Delta available next month.",
+        "time": "2026-06-04T23:57:05.330Z"
+      }
+    ]
+  },
+  {
+    "run": "June 2026",
     "at": "2026-06-04T03:12:08.960Z",
     "alerts": [
       {
