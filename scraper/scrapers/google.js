@@ -316,21 +316,17 @@ async function scrollAndCount(page, targetMonth) {
 }
 
 async function findScrollPanel(page) {
-  // Google Maps renders reviews in a scrollable side panel, NOT the main window.
-  // We need the right container to call scrollTop on.
   return await page.evaluate(() => {
     const candidates = [
       'div[aria-label*="Reviews for"]',
-      'div.m6QErb[tabindex]',
+      'div.m6QErb.D37wXb', 
+      'div.m6QErb[tabindex="0"]',
       'div[role="main"] div[tabindex="-1"]',
-      'div[jsrenderer] div[tabindex]',
-      'div[role="main"]',
+      '#QA0Szd div[tabindex="0"]'
     ];
     for (const sel of candidates) {
-      const els = document.querySelectorAll(sel);
-      for (const el of els) {
-        if (el.scrollHeight > el.clientHeight + 50) return sel;
-      }
+      const el = document.querySelector(sel);
+      if (el && el.scrollHeight > el.clientHeight + 30) return sel;
     }
     return null;
   }).catch(() => null);
