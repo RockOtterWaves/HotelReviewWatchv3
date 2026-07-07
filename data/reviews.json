@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-06-07T19:59:31.619Z",
+  "lastUpdated": "2026-07-07T20:57:49.799Z",
   "properties": {
     "sea-air-inn": {
       "name": "Sea Air Inn",
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:07:34.316Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:03:48.798Z",
           "platforms": {
             "booking": {
-              "count": 62,
+              "count": 89,
               "error": null
             },
             "expedia": {
@@ -18,11 +18,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 286,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 27,
+              "rawTotal": 316,
+              "previousTotal": 289,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -69,11 +69,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:15:38.753Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:12:04.226Z",
           "platforms": {
             "booking": {
-              "count": 61,
+              "count": 83,
               "error": null
             },
             "expedia": {
@@ -81,11 +81,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 74,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 51,
+              "rawTotal": 127,
+              "previousTotal": 76,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -132,11 +132,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:23:35.041Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:20:29.667Z",
           "platforms": {
             "booking": {
-              "count": 63,
+              "count": 86,
               "error": null
             },
             "expedia": {
@@ -144,11 +144,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 177,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 5,
+              "rawTotal": 182,
+              "previousTotal": 177,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -195,11 +195,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:31:23.577Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:28:01.573Z",
           "platforms": {
             "booking": {
-              "count": 58,
+              "count": 67,
               "error": null
             },
             "expedia": {
@@ -207,11 +207,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 550,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 2,
+              "rawTotal": 552,
+              "previousTotal": 550,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -258,11 +258,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:35:43.509Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:32:38.941Z",
           "platforms": {
             "booking": {
-              "count": 25,
+              "count": 51,
               "error": null
             },
             "expedia": {
@@ -270,11 +270,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 529,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 3,
+              "rawTotal": 532,
+              "previousTotal": 529,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -321,11 +321,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:41:06.134Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:38:18.717Z",
           "platforms": {
             "booking": {
-              "count": 37,
+              "count": 53,
               "error": null
             },
             "expedia": {
@@ -333,11 +333,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 535,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 12,
+              "rawTotal": 548,
+              "previousTotal": 536,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -384,11 +384,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:46:51.473Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:44:18.956Z",
           "platforms": {
             "booking": {
-              "count": 37,
+              "count": 51,
               "error": null
             },
             "expedia": {
@@ -396,11 +396,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 141,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 3,
+              "rawTotal": 144,
+              "previousTotal": 141,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -447,11 +447,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T22:55:18.377Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T19:52:34.896Z",
           "platforms": {
             "booking": {
-              "count": 63,
+              "count": 82,
               "error": null
             },
             "expedia": {
@@ -459,11 +459,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 596,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 5,
+              "rawTotal": 603,
+              "previousTotal": 598,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -510,11 +510,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:03:28.347Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:02:50.831Z",
           "platforms": {
             "booking": {
-              "count": 61,
+              "count": 77,
               "error": null
             },
             "expedia": {
@@ -522,11 +522,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 88,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 11,
+              "rawTotal": 100,
+              "previousTotal": 89,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -573,11 +573,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:15:51.124Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:15:36.463Z",
           "platforms": {
             "booking": {
-              "count": 63,
+              "count": 89,
               "error": null
             },
             "expedia": {
@@ -585,11 +585,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 71,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 10,
+              "rawTotal": 81,
+              "previousTotal": 71,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -632,11 +632,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:23:51.065Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:23:58.129Z",
           "platforms": {
             "booking": {
-              "count": 66,
+              "count": 87,
               "error": null
             },
             "expedia": {
@@ -644,11 +644,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 5,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 3,
+              "rawTotal": 8,
+              "previousTotal": 5,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -695,11 +695,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:32:33.274Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:32:48.941Z",
           "platforms": {
             "booking": {
-              "count": 60,
+              "count": 75,
               "error": null
             },
             "expedia": {
@@ -750,11 +750,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:37:53.994Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:38:17.634Z",
           "platforms": {
             "booking": {
-              "count": 36,
+              "count": 42,
               "error": null
             },
             "expedia": {
@@ -762,11 +762,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 66,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 6,
+              "rawTotal": 72,
+              "previousTotal": 66,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -813,8 +813,8 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:38:48.476Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:39:26.778Z",
           "platforms": {
             "booking": {
               "count": null,
@@ -829,11 +829,11 @@
               "note": "No URL configured"
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 120,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 5,
+              "rawTotal": 125,
+              "previousTotal": 120,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -884,8 +884,8 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:39:58.665Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:40:29.014Z",
           "platforms": {
             "booking": {
               "count": null,
@@ -900,11 +900,11 @@
               "note": "No URL configured"
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 128,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 4,
+              "rawTotal": 132,
+              "previousTotal": 128,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
@@ -955,11 +955,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:47:29.313Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:48:08.244Z",
           "platforms": {
             "booking": {
-              "count": 64,
+              "count": 81,
               "error": null
             },
             "expedia": {
@@ -1014,11 +1014,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:55:11.042Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:55:49.014Z",
           "platforms": {
             "booking": {
-              "count": 65,
+              "count": 89,
               "error": null
             },
             "expedia": {
@@ -1073,11 +1073,11 @@
       "history": {
         "2026-06": {
           "label": "June 2026",
-          "mode": "baseline",
-          "scrapedAt": "2026-06-04T23:57:16.290Z",
+          "mode": "monthly",
+          "scrapedAt": "2026-07-07T20:57:49.799Z",
           "platforms": {
             "booking": {
-              "count": 7,
+              "count": 21,
               "error": null
             },
             "expedia": {
@@ -1085,11 +1085,11 @@
               "error": null
             },
             "airbnb": {
-              "count": null,
-              "rawTotal": 27,
-              "previousTotal": null,
-              "previousMonth": null,
-              "note": "No prior snapshot found — baseline stored. Delta available next month.",
+              "count": 24,
+              "rawTotal": 55,
+              "previousTotal": 31,
+              "previousMonth": "2026-05",
+              "note": null,
               "error": null
             },
             "google": {
