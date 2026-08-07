@@ -1,5 +1,130 @@
 [
   {
+    "run": "July 2026",
+    "at": "2026-08-07T19:41:01.098Z",
+    "alerts": [
+      {
+        "level": "warn",
+        "property": "Sea Air Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T17:48:29.645Z"
+      },
+      {
+        "level": "warn",
+        "property": "Blufftop Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T17:56:40.919Z"
+      },
+      {
+        "level": "warn",
+        "property": "Harbor House",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:05:10.616Z"
+      },
+      {
+        "level": "warn",
+        "property": "Bay View Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:13:09.752Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:17:43.052Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:23:10.604Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:29:29.655Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:37:48.421Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:45:54.051Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:54:03.252Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Google",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T18:58:45.803Z"
+      },
+      {
+        "level": "warn",
+        "property": "La Serena Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T19:14:41.113Z"
+      },
+      {
+        "level": "error",
+        "property": "La Serena Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-08-07T19:15:44.254Z"
+      },
+      {
+        "level": "warn",
+        "property": "456 Embarcadero",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T19:20:35.368Z"
+      },
+      {
+        "level": "warn",
+        "property": "Landing Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T19:30:14.202Z"
+      },
+      {
+        "level": "warn",
+        "property": "Masterpiece Hotel",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T19:38:07.379Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-08-07T19:40:05.645Z"
+      }
+    ]
+  },
+  {
     "run": "June 2026",
     "at": "2026-07-07T20:57:49.833Z",
     "alerts": [
