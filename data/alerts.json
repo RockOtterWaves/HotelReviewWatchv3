@@ -1,5 +1,144 @@
 [
   {
+    "run": "August 2026",
+    "at": "2026-09-07T22:08:54.934Z",
+    "alerts": [
+      {
+        "level": "warn",
+        "property": "Sea Air Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:25:08.510Z"
+      },
+      {
+        "level": "warn",
+        "property": "Blufftop Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:33:20.439Z"
+      },
+      {
+        "level": "warn",
+        "property": "Harbor House",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:41:41.549Z"
+      },
+      {
+        "level": "warn",
+        "property": "Bay View Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:49:09.821Z"
+      },
+      {
+        "level": "warn",
+        "property": "Avalon Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:54:00.200Z"
+      },
+      {
+        "level": "warn",
+        "property": "Coastal Breeze",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T20:59:44.940Z"
+      },
+      {
+        "level": "warn",
+        "property": "Rockview Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:05:29.117Z"
+      },
+      {
+        "level": "warn",
+        "property": "Morro Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:13:27.685Z"
+      },
+      {
+        "level": "warn",
+        "property": "Hotel Avisa",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:21:32.708Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:29:51.688Z"
+      },
+      {
+        "level": "warn",
+        "property": "Pacific Shores Inn",
+        "platform": "Google",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:34:26.817Z"
+      },
+      {
+        "level": "warn",
+        "property": "Ascot Suites",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:41:52.493Z"
+      },
+      {
+        "level": "warn",
+        "property": "La Serena Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:50:16.734Z"
+      },
+      {
+        "level": "error",
+        "property": "La Serena Inn",
+        "platform": "Airbnb",
+        "message": "Could not extract any review counts from Airbnb profile page",
+        "time": "2026-09-07T21:51:20.853Z"
+      },
+      {
+        "level": "warn",
+        "property": "456 Embarcadero",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T21:56:03.429Z"
+      },
+      {
+        "level": "warn",
+        "property": "Landing Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T22:03:59.297Z"
+      },
+      {
+        "level": "warn",
+        "property": "Masterpiece Hotel",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T22:06:32.657Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Booking.com",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T22:07:40.088Z"
+      },
+      {
+        "level": "warn",
+        "property": "Holland Inn",
+        "platform": "Expedia",
+        "message": "Returned 0 reviews — verify URL and page loaded correctly",
+        "time": "2026-09-07T22:08:09.466Z"
+      }
+    ]
+  },
+  {
     "run": "July 2026",
     "at": "2026-08-07T19:41:01.098Z",
     "alerts": [
